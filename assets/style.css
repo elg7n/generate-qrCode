@@ -17,7 +17,11 @@ body{
     background: #fff;
     max-width: 410px;
     border-radius: 7px;
-    padding: 16px 25px;
+    padding: 16px 25px 0;
+    transition: height 0.3s ease;
+}
+.wrapper.active{
+    height: 530px;
 }
 header h1{
     font-size: 21px;
@@ -29,7 +33,7 @@ header p{
     color: #666;
 }
 .wrapper .form{
-    margin: 20px 0 30px;
+    margin: 20px 0 25px;
 }
 .form input,button{
     width: 100%;
@@ -59,4 +63,8 @@ header p{
     align-items: center;
     justify-content: center;
     border: 1px solid #ccc;
+}
+.wrapper.active .qr-code{
+    opacity: 1;
+    transition: opacity 0.5 ease;
 }
